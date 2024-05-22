@@ -1,0 +1,56 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: var(--black);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.link {
+    color: var(--grey);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.link:hover {
+    color: var(--light-grey);
+    transition: all 0.3s
+}
+
+
+.mobile-drawer {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .links {
+        display: none;
+    }
+
+    .mobile-drawer {
+        display: block;
+    }
+
+    .drawer-div {
+        width: 40vw;
+        background-color: var(--black);
+        height: 100vh;
+        padding: 0.5rem 1.5rem;
+    }
+  }
